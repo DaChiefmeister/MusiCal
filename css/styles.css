@@ -73,16 +73,46 @@ a.logo {
 a#login{
     font-size: 1.25em;
     float:left;
-    margin: 2% 1.75% 0 69%;
+    margin: 1% 1.75% 0 69%;
     text-decoration: none;
     color:#FFFFFF;
+}
+a#firstNav{
+    margin-left: 35%;
+}
+nav li{
+    list-style-type: none;
 }
 nav li a{
     font-size: 20px;
     text-decoration: none;
     color:#FFFFFF;
+    float:left;
+    margin:1% 1.75% 0 0;
 }
-
+nav form{
+    float:left;
+    margin-top:1%;
+}
+br.clearFloat{
+    clear:both;
+}
+div#tagline{
+    margin: 15% auto;
+    width:900px;
+    height:auto;
+    text-align: center;
+    color:#FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#tagline h1{
+    font-size:1.5em;
+}
+div#signUp{
+    margin:0 auto 2% auto;
+    width:10%;
+    height:2.5%;
+}
 
 
 /* ==========================================================================
