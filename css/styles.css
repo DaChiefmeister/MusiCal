@@ -60,7 +60,7 @@ body{
 div.parallax{
     width:100%;
     height:100%;
-    background: url(img/parallaxImg.jpg);
+    background: url(../img/parallaxImg.jpg);
     background-color: #D0D0D0;
 }
 a.logo {
@@ -99,22 +99,27 @@ br.clearFloat{
 }
 div#tagline{
     margin: 15% auto;
-    width:900px;
+    width:800px;
     height:auto;
     text-align: center;
     color:#FFFFFF;
-    border: 2px solid #FFFFFF;
 }
 #tagline h1{
     font-size:1.5em;
 }
-div#signUp{
+div#signUp {
     margin:0 auto 2% auto;
     width:10%;
     height:2.5%;
+    padding:2%;
+    border: 2xp solid #A20000;
 }
-
-
+div#signUp a{
+    
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 1.25em;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
