@@ -61,6 +61,8 @@ div.parallax{
     width:100%;
     height:100%;
     background: url(../img/parallaxImg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: #D0D0D0;
 }
 a.logo {
@@ -108,17 +110,38 @@ div#tagline{
     font-size:1.5em;
 }
 div#signUp {
-    margin:0 auto 2% auto;
-    width:10%;
+ 
+}
+a#signUp {
+    margin:2% auto 2% auto;
+    width:15%;
     height:2.5%;
     padding:2%;
+    background-color: rgba(208, 208, 208, .8);
     border: 2xp solid #A20000;
-}
-div#signUp a{
-    
+    font-size: 1.5em;
     text-decoration: none;
-    color:#FFFFFF;
-    font-size: 1.25em;
+    color:#FFFFFF;  
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+section{
+    width:85%;
+    margin: 5% auto;
+}
+div.event{
+    width:18vw;
+    height:18vw;
+    background-color: #838383;
+    float:left;
+    margin:2vw 2.5vw 2vw 0 ;
+}
+div.largeEvent{
+    width:40vw;
+    height:40vw;
+}
+#moreEvents {
+    float:right;
 }
 /* ==========================================================================
    Media Queries
