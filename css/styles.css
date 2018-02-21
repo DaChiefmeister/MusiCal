@@ -64,6 +64,8 @@ div.parallax{
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #D0D0D0;
+    background-attachment: fixed;
+    background-position: center;
 }
 a.logo {
     width:259px;
@@ -109,9 +111,6 @@ div#tagline{
 #tagline h1{
     font-size:1.5em;
 }
-div#signUp {
- 
-}
 a#signUp {
     margin:2% auto 2% auto;
     width:15%;
@@ -136,24 +135,85 @@ div.event{
     float:left;
     margin:2vw 2vw 0 0;
 }
-div.event:hover{
+div.event h3{
+    text-align: center;
+    color:#FFFFFF;
+    font-size:2vw;
+    margin:0;
+    padding-top:0;
+}
+div.toggler h3.title{
+    position:relative;
+    top:-1vw;
+}
+div.event h3.performanceType{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0 1vw;
+    margin:0;
+    color:#FC4242;
+}
+.largeEvent .expand h3{
+    padding-top:4vw;
+}
+div.toggler h5{
+    padding-top:1vw;
+    font-size: 1.1vw; 
+    color:#FFFFFF;
+}
+div.eventInfo{
+    position:relative;
+    background-color: #D0D0D0;
+}
+div.eventInfo:hover{
     background-color: rgba(208, 208, 208, 1);
     -webkit-transition: background .5s ease-in;
     -moz-transition: background .5s ease-in;
     -ms-transition: background .5s ease-in;
     -o-transition: background .5s ease-in;
     transition: background .5s ease-in;
+    display: block;
 }
 div.largeEvent{
     width:38vw;
     height:38vw;
+}   
+div.gatesMiami{
+    background: url(../img/gatesMiami.png);
+    background-repeat: no-repeat;
+    background-size:100%; 
+}
+div.souersMiami{
+    background: url(../img/souersMiami.jpg);
+    background-repeat: no-repeat;
+    background-size:100%; 
+}
+#more{
+    color: #0088E3;
+    margin-top: 2vw;
+    background-color: #FFFFFF;
 }
 div.toggler{
-    margin-top: 2vw;
+    margin-top: 14vw;
+    height:4vw;
     text-align: center;
-    text-decoration: underline;
-    color:#0088E3;
     cursor: pointer;
+    background-color: #D0D0D0;
+}
+.largeEvent .toggler{
+    height:8vw;
+    margin-top: 30vw;
+}
+.event .expand{
+    position:relative;
+    top:-14vw; 
+    height:14vw;
+}
+.largeEvent .expand{
+    position:relative;
+    top:-30vw; 
+    height:29vw;
 }
 #moreEvents {
     float:left;
@@ -165,6 +225,9 @@ div.event #moreEvents{
 }
 .expand{
     display: none;
+    position: relative;
+    top:-4vw;
+    background-color: #FFFFFF;
 }
 footer{
     background-color: #D0D0D0;
@@ -184,16 +247,32 @@ footer div.blurb{
 div.blurb p{
     height: 10vw;
     margin:2.5vw 0;
-    padding:1%;
+    padding:2%;
 }
 footer form{
     width:35vw;
-    float:left;
-    text-align: right;
+    display: table;
 }
 footer feildset{
     float:left;
     text-align: right;
+    display: table-row;
+    width: 100%;
+}
+footer label { 
+    display: table-cell;
+    text-align: right;
+    float:left;
+    margin-bottom: 2vw;
+    width:6vw;
+}
+footer input { 
+    display: table-cell;
+    margin-bottom: 2vw;
+    width:25vw;
+}
+#message{
+    height:16vw;
 }
 footer#copywrite{
     background-color: #606060;
