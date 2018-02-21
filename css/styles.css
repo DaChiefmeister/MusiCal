@@ -126,22 +126,79 @@ a#signUp {
     border-radius: 15px 15px 15px 15px;
 }
 section{
-    width:85%;
-    margin: 5% auto;
+    width:82%;
+    margin: 5% 8vw 5% 10vw;
 }
 div.event{
     width:18vw;
     height:18vw;
     background-color: #838383;
     float:left;
-    margin:2vw 2.5vw 2vw 0 ;
+    margin:2vw 2vw 0 0;
+}
+div.event:hover{
+    background-color: rgba(208, 208, 208, 1);
+    -webkit-transition: background .5s ease-in;
+    -moz-transition: background .5s ease-in;
+    -ms-transition: background .5s ease-in;
+    -o-transition: background .5s ease-in;
+    transition: background .5s ease-in;
 }
 div.largeEvent{
-    width:40vw;
-    height:40vw;
+    width:38vw;
+    height:38vw;
+}
+div.toggler{
+    margin-top: 2vw;
+    text-align: center;
+    text-decoration: underline;
+    color:#0088E3;
+    cursor: pointer;
 }
 #moreEvents {
-    float:right;
+    float:left;
+    Width:40vw;
+}
+div.event #moreEvents{
+    margin:2vw 1.8vw 2vw 0;
+    float:left;
+}
+.expand{
+    display: none;
+}
+footer{
+    background-color: #D0D0D0;
+    height:75%;
+    text-align: center;
+    color:#FFFFFF;
+    margin:0;
+}
+footer div.blurb{
+    width:22vw;
+    height: 25vw;
+    float:left;
+    margin: 0 15vw;
+    background-color: #838383;
+    font-size: 1.25em;
+}
+div.blurb p{
+    height: 10vw;
+    margin:2.5vw 0;
+    padding:1%;
+}
+footer form{
+    width:35vw;
+    float:left;
+    text-align: right;
+}
+footer feildset{
+    float:left;
+    text-align: right;
+}
+footer#copywrite{
+    background-color: #606060;
+    height:8%;
+    margin-top: -2vw;
 }
 /* ==========================================================================
    Media Queries

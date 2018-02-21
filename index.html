@@ -4,9 +4,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>MusiCal: Home</title>
     <meta name="viewport" content="width=device-width">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png">
+    <script>
+        $(function() {
+            $('.toggler').click(function() {
+                $(this).find('.expand').slideToggle();
+            });
+        });
+    </script>
 </head>
 <body>
 	<header>
@@ -15,8 +23,8 @@
             <a href="login.html" id="login">LOGIN</a>
             <nav>
                 <li><a href="index.html" id="firstNav">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <form acion="index.html" class="search">
                     <!-- search bar -->
@@ -26,9 +34,7 @@
             </nav>
             <div id="tagline">
                 <h1>MusiCal, the online calendar for all your music needs</h1>
-                <div id="signUp">
-                    <a href="signUp.html">Sign Up</a>
-                </div>
+                <a href="signUp.html" id="signUp">Sign Up</a>
             </div>
         </div>    
 	</header>
@@ -38,12 +44,18 @@
         <div class="event"></div>
         <div class="event"></div>
         <div class="event"></div>
-        <div class="event hidden"></div>
-        <div class="event hidden"></div>
-        <div class="event hidden"></div>
-        <div class="event hidden"></div>
-        <div class="largeEvent hidden"></div>
+        <br class="clearFLoat">
+        <div class="toggler"> MORE EVENTS
+            <div class="expand">
+                <div class="event hidden"></div>
+                <div class="event hidden"></div>
+                <div class="largeEvent event hidden" id="moreEvents"></div>
+                <div class="event hidden"id="moreEvents"></div>
+                <div class="event hidden"id="moreEvents"></div>
+            </div>
+        </div>
     </section>
+    <br class="clearFloat">
     <footer>
         <a name="contact"><h1>Contact</h1></a>
         <div class="blurb"></div>
