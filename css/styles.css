@@ -67,6 +67,15 @@ div.parallax{
     background-attachment: fixed;
     background-position: center;
 }
+div#number2{
+    height:50%;
+    background: url(../img/hallMiami.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #FFFFFF;
+    background-attachment: fixed;
+    background-position: center;
+}
 a.logo {
     width:259px;
     height:102px;
@@ -126,7 +135,7 @@ a#signUp {
 }
 section{
     width:82%;
-    margin: 5% 8vw 5% 10vw;
+    margin: 5% 8vw 0 10vw;
 }
 div.event{
     width:18vw;
@@ -161,19 +170,6 @@ div.toggler h5{
     padding-top:1vw;
     font-size: 1.1vw; 
     color:#FFFFFF;
-}
-div.eventInfo{
-    position:relative;
-    background-color: #D0D0D0;
-}
-div.eventInfo:hover{
-    background-color: rgba(208, 208, 208, 1);
-    -webkit-transition: background .5s ease-in;
-    -moz-transition: background .5s ease-in;
-    -ms-transition: background .5s ease-in;
-    -o-transition: background .5s ease-in;
-    transition: background .5s ease-in;
-    display: block;
 }
 div.largeEvent{
     width:38vw;
@@ -215,26 +211,29 @@ div.toggler{
     top:-30vw; 
     height:29vw;
 }
-#moreEvents {
-    float:left;
-    Width:40vw;
-}
-div.event #moreEvents{
-    margin:2vw 1.8vw 2vw 0;
-    float:left;
-}
 .expand{
     display: none;
-    position: relative;
-    top:-4vw;
-    background-color: #FFFFFF;
+    background-color: #D0D0D0;
+}
+div#moreEvents{
+    text-align: center;
+    width:100%;
+    margin-top: 4vw;
+}
+div#moreEvents a{
+    font-size: 2vw;
+    color:#0088E3;
 }
 footer{
     background-color: #D0D0D0;
-    height:75%;
+    height:80%;
     text-align: center;
     color:#FFFFFF;
     margin:0;
+}
+footer h1{
+    margin:0;
+    padding:2vw;
 }
 footer div.blurb{
     width:22vw;
@@ -247,7 +246,7 @@ footer div.blurb{
 div.blurb p{
     height: 10vw;
     margin:2.5vw 0;
-    padding:2%;
+    padding:1vw;
 }
 footer form{
     width:35vw;
@@ -265,19 +264,28 @@ footer label {
     float:left;
     margin-bottom: 2vw;
     width:6vw;
+    font-size: 1.3vw;
 }
 footer input { 
     display: table-cell;
     margin-bottom: 2vw;
     width:25vw;
 }
+footer input#submit{
+    width:25vw;
+    margin-left:4vw;
+}
 #message{
     height:16vw;
 }
 footer#copywrite{
     background-color: #606060;
-    height:8%;
+    height:11%;
     margin-top: -2vw;
+}
+#copywrite p{
+    padding-top: 2vw;
+    margin:0;
 }
 /* ==========================================================================
    Media Queries
