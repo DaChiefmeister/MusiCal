@@ -4,18 +4,39 @@ div.event{
     background-color: #838383;
     float:left;
     margin:2vw 2vw 0 0;
+    color:#EFEFEF
+}
+div.event p{
+    font-size: 1vw;
+    margin: 1vw;
+}
+div.event a{
+    color:#0088E3;
+    font-size: 1vw;
+}
+div.largeEvent a{
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+div.largeEvent p{
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+div.event span{
+    font-family: 'Cormorant Garamond', serif;
+    color:#FC4242;
 }
 div.event h3{
     text-align: center;
-    color:#FFFFFF;
-    font-size:2vw;
+    color:#EFEFEF;
+    font-size:2.5vw;
     margin:0;
     padding-top:0;
 }
 div.event h5{
     text-align: center;
-    color:#FFFFFF;
-    font-size:1vw;
+    color:#EFEFEF;
+    font-size:1.5vw;
     margin:0;
     padding-top:0;
 }
@@ -26,7 +47,7 @@ div.toggler h3.title{
 div.toggler h5.title{
     padding-top:0;
     font-size: 1.1vw; 
-    color:#FFFFFF;
+    color:#EFEFEF;
     margin: 0;
     position:relative;
     top:-.5vw;
@@ -52,6 +73,9 @@ div.event h5.performanceType{
 }
 .largeEvent .expand h3{
     padding-top:4vw;
+}
+.event .expand h5{
+    padding-top:1vw;
 }
 div.largeEvent{
     width:38vw;
@@ -90,7 +114,7 @@ div.toggler{
 }
 .event .expand{
     position:relative;
-    top:-14vw; 
+    top:-13vw; 
     height:13vw;
 }
 .largeEvent .expand{
