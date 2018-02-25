@@ -107,6 +107,22 @@ nav form{
     float:left;
     margin-top:1%;
 }
+input.search{
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border-style:solid;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    padding-left: .75vw;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    padding-left: .75vw;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    padding-left: .75vw;
+}
 br.clearFloat{
     clear:both;
 }
