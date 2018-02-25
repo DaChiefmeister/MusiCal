@@ -1,0 +1,14 @@
+/*fonts*/
+h1 {font-family: 'Open Sans' sans-serif; font-weight: 700;
+}
+h4 {font-family: 'PT Serif', serif;}
+/*images*/
+.venuepic {max-width: 30%; max-height: auto; float: left; margin-right: 20px;
+}
+
+/*navigation*/
+nav {}
+
+/* webpage body*/
+main {margin:0px 150px 0px 150px}
+
