@@ -1,20 +1,24 @@
 /*fonts*/
 
-.question {font-family:'PT Serif', serif;       
+.question {
+    font-family:'PT Serif', serif;       
 }
 
-p {font-family: 'Open Sans', sans-serif;
+p {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 12px;
 }
 
 /*image*/
-#sideimage {float: right;
-            max-width:50%;
-            max-height:auto;
-            margin:50px;
-    }
+main img#sideImage {
+    float: right;
+    max-width:50%;
+    max-height:auto;
+    margin:50px;
+}
 /*main content*/
 
-main {margin:0px 80px;
+main {
+    margin:0px 80px;
 }
