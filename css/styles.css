@@ -113,15 +113,15 @@ input.search{
     border-style:solid;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    padding-left: .75vw;
+    padding-left: .5vw;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    padding-left: .75vw;
+    padding-left: .5vw;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    padding-left: .75vw;
+    padding-left: .5vw;
 }
 br.clearFloat{
     clear:both;
