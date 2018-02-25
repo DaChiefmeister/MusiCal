@@ -219,7 +219,7 @@ footer label {
     text-align: right;
     float:left;
     margin-bottom: 2vw;
-    width:6vw;
+    width:6.5vw;
     font-size: 1.3vw;
 }
 footer input { 
@@ -229,7 +229,7 @@ footer input {
 }
 footer input#submit{
     width:25vw;
-    margin-left:4vw;
+    margin-left:3vw;
 }
 #message{
     height:16vw;
