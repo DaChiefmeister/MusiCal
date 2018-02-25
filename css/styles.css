@@ -234,6 +234,9 @@ footer input#submit{
     width:25vw;
     margin-top: 1vw;
 }
+footer  textarea{
+    width:25vw;
+}
 #message{
     height:16vw;
 }
