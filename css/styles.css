@@ -111,7 +111,16 @@ nav li a{
     color:#FFFFFF;
     float:left;
     margin:1% 1.75% 0 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+nav li a:hover {color:lightgrey;
+                border-bottom: lightgrey solid 1.5px;
+}
+
+nav li a:active {color: #FC4242;
+}
+
 nav form{
     float:left;
     margin-top:1%;
