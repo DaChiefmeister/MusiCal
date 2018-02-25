@@ -55,17 +55,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-    font-family:Helvetica;
+    font-family:'Open Sans', sans-serif;
+    font-weight:300;
 }   
-h1 {font-family: 'Open Sans' sans-serif; font-weight: 700;
+h1 {
+    font-family: 'Open Sans' sans-serif; 
+    font-weight: 700;
 }
 span{
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'PT Serif', serif;
     color:#FC4242;
 }
 h1 span {
-    font-family:Helvetica;
+    font-family:'Open Sans', sans-serif;
     font-size: 2vw;
+    font-weight: 700;
 }
 div.parallax{
     width:100%;
@@ -111,7 +115,17 @@ nav li a{
     color:#FFFFFF;
     float:left;
     margin:1% 1.75% 0 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+nav li a:hover {
+    color:lightgrey;
+    border-bottom: lightgrey solid 1.5px;
+}
+
+nav li a:active {color: #FC4242;
+}
+
 nav form{
     float:left;
     margin-top:1%;
