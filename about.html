@@ -88,7 +88,7 @@
 	<footer>
         <a name="contact"><h1>Contact</h1></a>
         <div class="blurb"></div>
-        <form action="thanks.html">
+        <form action="thanks.html" id="contactUs">
             <fieldset>
                 <label for="fullName">Full Name</label>
                 <input type="text" name="Full Name" id="fullName">
@@ -99,10 +99,10 @@
             </fieldset>
             <fieldset>
                 <label for="message">Message</label>
-                <input type="text" name="Message" id="message">
+                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
             </fieldset>
             <fieldset>
-                <label for="submit"> </label>
+                <label for="submit"></label>
                 <input type="submit" value="Submit" id="submit">
             </fieldset>
         </form>

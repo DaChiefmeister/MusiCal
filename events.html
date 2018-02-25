@@ -19,9 +19,9 @@
 </head>
 <body>
 	<header>
-        <a href="index.html" class="logo"><img src="img/musical.png"/></a> <!-- logo -->
+        <a href="index.html" class="logo"><img src="img/musicalNoBackground.png"/></a> <!-- logo -->
 		<nav>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" id="firstNav">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="#contact">Contact</a></li> 
@@ -29,6 +29,7 @@
             <!-- search bar -->
 			     <input type="text" placeholder="Search.." class="search">
             </form>
+            <br class="clearFloat">
         </nav>
 </header>
 <section>
@@ -92,23 +93,23 @@
     <footer>
         <a name="contact"><h1>Contact</h1></a>
         <div class="blurb"></div>
-        <form action="thanks.html">
-            <feildset>
+       <form action="thanks.html" id="contactUs">
+            <fieldset>
                 <label for="fullName">Full Name</label>
                 <input type="text" name="Full Name" id="fullName">
-            </feildset>
-            <feildset>
+            </fieldset>
+            <fieldset>
                 <label for="email">Email</label>
                 <input type="text" name="Email" id="email">
-            </feildset>
-            <feildset>
+            </fieldset>
+            <fieldset>
                 <label for="message">Message</label>
-                <input type="text" name="Message" id="message">
-            </feildset>
-            <feildset>
-                <label for="submit"> </label>
+                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="submit"></label>
                 <input type="submit" value="Submit" id="submit">
-            </feildset>
+            </fieldset>
         </form>
     </footer>
 </body>

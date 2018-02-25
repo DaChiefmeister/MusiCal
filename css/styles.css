@@ -134,7 +134,8 @@ nav form{
     float:left;
     margin-top:1%;
 }
-nav {background-color: #494949;
+nav {
+    background-color: #494949;
 }
 input.search{
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -211,7 +212,7 @@ footer form{
     width:35vw;
     display: table;
 }
-footer feildset{
+footer fieldset{
     float:left;
     text-align: right;
     display: table-row;
@@ -221,8 +222,7 @@ footer label {
     display: table-cell;
     text-align: right;
     float:left;
-    margin-bottom: 2vw;
-    width:6vw;
+    width:7vw;
     font-size: 1.3vw;
 }
 footer input { 
@@ -232,7 +232,7 @@ footer input {
 }
 footer input#submit{
     width:25vw;
-    margin-left:4vw;
+    margin-top: 1vw;
 }
 #message{
     height:16vw;
