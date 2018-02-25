@@ -7,8 +7,16 @@ h4 {font-family: 'PT Serif', serif;}
 }
 
 /*navigation*/
-nav {}
-
+header{
+    background-color: #D0D0D0;
+    height:9vw;
+}
+a.logo img{
+    margin:1vw 0 0 2vw;
+}
+nav{
+    padding-top: 1vw; 
+}
 /* webpage body*/
 main {margin:0px 150px 0px 150px}
 
