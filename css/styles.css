@@ -57,10 +57,7 @@ textarea {
 body{
     font-family:'Open Sans', sans-serif;
     font-weight:300;
-}  
-header{
-    background-color: #494949;
-}
+}   
 h1 {
     font-family: 'Open Sans' sans-serif; 
     font-weight: 700;
@@ -132,6 +129,8 @@ nav li a:active {color: #FC4242;
 nav form{
     float:left;
     margin-top:1%;
+}
+nav {background-color: #494949;
 }
 input.search{
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -219,7 +218,7 @@ footer label {
     text-align: right;
     float:left;
     margin-bottom: 2vw;
-    width:6.5vw;
+    width:6vw;
     font-size: 1.3vw;
 }
 footer input { 
@@ -229,7 +228,7 @@ footer input {
 }
 footer input#submit{
     width:25vw;
-    margin-left:3vw;
+    margin-left:4vw;
 }
 #message{
     height:16vw;
