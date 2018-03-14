@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>MusiCal: Upcoming Events</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="shortcut icon" type="image/png" href="img/tabIcon.png">
+    <script>
+        $(function() {
+            $('.toggler').click(function() {
+                $(this).find('.expand').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+	<header>
+        <a href="index.html" class="logo"><img src="img/musicalNoBackground.png"/></a> <!-- logo -->
+		<nav>
+            <li><a href="index.html" id="firstNav">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <form>
+            <!-- search bar -->
+			     <input type="text" placeholder="Search.." class="search">
+            </form>
+            <br class="clearFloat">
+        </nav>
+</header>
+<section>
+	<!-- link to submit event page-->
+	<p> To let us know about any upcoming events, submit them <a href="submit.html"> here. </a></p>
+    <h1>MIAMI UNIVERSITY College of Creative Arts Performances</h1>
+    <div class="largeEvent event gatesMiami">
+            <div class="toggler"><h3 class="performanceType">Opera</h3><h3 class="title">Ghost Stories</h3>
+                <div class="expand">
+                    <h3>MU Opera Ghost Stories</h3>
+                    <p>Two short operas in one night. Join Miami Opera for a performance of Holst's <span>Savitri</span> and Menotti's <span>The Medium</span></p>
+                    <p>Thursday-Saturday, March 1-3</p>
+                    <p>at 7:30 pm</p>
+                    <a href="https://ev13.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=MS&linkID=miamioh&shopperContext=&caller=&appCode=">Tickets</a>
+                    <a href="https://www.google.com/maps/place/Miami+University+Department+of+Theatre/@39.5050231,-84.7340516,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xe9e2f711e89a489c!8m2!3d39.505019!4d-84.7318629" class="gatesMiami"> Directions</a>
+                </div>
+            </div>
+        </div>
+        <div class="event souersMiami">
+            <div class="toggler"><h5 class="performanceType">Voice</h5><h5 class="title">Tiffany Turkovich</h5>
+                <div class="expand">
+                    <h5>Recital: Tiffany Turkovich</h5>
+                    <p>Saturday, February 24</p>
+                    <p>at 7:30 pm</p>
+                    <a href="https://www.google.com/maps/place/420+S+Patterson+Ave,+Oxford,+OH+45056/@39.5042724,-84.7346433,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xeff96b0d57c55b81!8m2!3d39.5042683!4d-84.7324546" class="souersMiami"> Directions</a>
+                </div>
+            </div>
+        </div>
+        <div class="event hallMiami">
+            <div class="toggler"><h5 class="performanceType">Choir</h5><h5 class="title">Schubert Mass in G</h5>
+                <div class="expand">
+                    <h5>Chamber Singers and Collegiate Chorale</h5>
+                    <p>Sunday, March 11</p>
+                    <p>at 7:30 pm</p>
+                    <a href="https://www.google.com/maps/place/Hall+Auditorium,+Oxford,+OH+45056/@39.5089513,-84.7406709,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0c4439050b:0x54673ca5595acc90!8m2!3d39.5089532!4d-84.7385071" class="hallMiami"> Directions</a>
+                </div>
+            </div>
+        </div>
+        <div class="event souersMiami">
+            <div class="toggler"><h5 class="performanceType">Voice</h5><h5 class="title">Voices from the Balkans</h5>
+                <div class="expand">
+                    <h5> Art songs from Bulgaria</h5>
+                    <p>Monday March 12</p>
+                    <p>at 7:30 pm</p>
+                    <a href="https://www.google.com/maps/place/420+S+Patterson+Ave,+Oxford,+OH+45056/@39.5042724,-84.7346433,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xeff96b0d57c55b81!8m2!3d39.5042683!4d-84.7324546" class="souersMiami"> Directions</a>
+                </div>
+            </div>
+        </div>
+        <div class="event souersMiami">
+            <div class="toggler"><h5 class="performanceType">Piano</h5><h5 class="title">Svetlana Belsky</h5>
+                <div class="expand">
+                    <h5>Guest Recital: Svetlana Belsky</h5>
+                    <p>Thursday, March 15</p>
+                    <p>at 7:30 pm</p>
+                    <a href="https://www.google.com/maps/place/420+S+Patterson+Ave,+Oxford,+OH+45056/@39.5042724,-84.7346433,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xeff96b0d57c55b81!8m2!3d39.5042683!4d-84.7324546" class="souersMiami"> Directions</a>
+                </div>
+            </div>
+</div>
+</section>
+    <br class="clearfloat">
+    <footer>
+        <a name="contact"><h1>Contact</h1></a>
+        <div class="blurb"></div>
+       <form action="thanks.html" id="contactUs">
+            <fieldset>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="Full Name" id="fullName">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="text" name="Email" id="email">
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="submit"></label>
+                <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
