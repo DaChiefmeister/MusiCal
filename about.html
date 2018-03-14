@@ -9,6 +9,33 @@
     <link rel="stylesheet" type="text/css" href="css/about.css"/>
 	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|PT+Serif" rel="stylesheet">
+    
+    <script>
+        var $=function(id)
+        {
+            return document.getElementById(id);
+        }
+        
+        window.onload=function()
+        {
+            var links=$("image_list").getElementsByTagName("a");
+            for (var i=0; i<links.length;i++)
+                {
+                    var image = new image();
+                    img.src=links[i].getAttribute("href");
+                    image.title=links[i].getAttribute("title");
+                }
+            
+            var imageCounter =0;
+            var timer = setInterval(function()
+                        {
+                            imageCounter=(imageCounter+1)% links.length;
+                            $("image").src = links[imageCounter].href;
+                            S("caption").firstChild.nodeValue=links[imageCounter].title;
+                        }, 2000);
+        }
+    
+    </script>
 </head>
 <body>
 	<header>
@@ -29,6 +56,22 @@
         <br class="clearFloat"/>
 	</header>
     <main>
+        <section class="main">
+        <ul id="image_list">
+            <li><a href="img/cello%20player.jpg" title="Cello Player"></a></li>
+            <li><a href="img/violinists.jpg" title="Violinists"></a> </li>
+            <li><a href="img/concert%20hall.jpg" title="Concert Venue"></a> </li>
+            <li><a href="img/cellist.jpg" title="Cello Players"></a> </li>
+            <li><a href="img/sax%20player.jpg" title="Saxophone Player"></a> </li>
+        
+        </ul>
+        
+        <h2 id="caption">Cello Player</h2>
+        <p>
+            <img src="img/cello%20player.jpg" alt="" id="image">
+        </p>
+        </section>
+        
         <p class="center"> For answers to some frequently asked questions, see <a href="faq.html"> here.</a></p>
         <h1>About MusiCal</h1>
         <div><p>MusiCal gathers information about upcoming musical performances in the Greater Cincinnati area and aggregates these events into an easy to navigate platform. We created MusiCal so that thes musical arts can be discovered and shared easily with friends and the community.</p>
