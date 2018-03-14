@@ -1,0 +1,136 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>MusiCal: Image Gallery</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|PT+Serif" rel="stylesheet">
+    <style>
+        #gallery {
+            margin: auto;
+            width: 75%
+        }
+        h1 {
+            padding: 0px 0px 0px 30px;
+        }
+        h2 {
+            font-size: 100%;
+            padding: .25em 0 0 60px;
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer; 
+            padding-bottom: 0px;
+        }
+        #image_list {
+            padding-left: 60px;
+        }
+        li {
+            padding-right: 10px;
+            display: inline;
+        }
+        p {
+            padding-left: 60px;
+        }
+    </style>
+    <script>
+        var $ = function (id) {
+            return document.getElementById(id);
+        }
+        window.onload = function () {
+            var imageLinks = $("image_list").getElementsByTagName("a");
+            // Process image links
+            for ( i = 0; i < imageLinks.length; i++ ) {
+                var linkNode = imageLinks[i];
+                // Attach event handler
+                linkNode.onclick = function (evt) {
+                    var link = this;          
+                    $("image").src = link.getAttribute("href");
+                    $("caption").firstChild.nodeValue = link.getAttribute("title");
+                    // Cancel the default action of the event
+                    if (!evt) {
+                        evt = window.event;
+                    }
+                    if(evt.preventDefault) {
+                        evt.preventDefault();
+                    }
+                    else {
+                        evt.returnValue = false;
+                    } 
+                } 
+                // Preload image
+                var image = new Image();
+                image.src = linkNode.getAttribute("href");
+            }
+            $("first_link").focus();
+        }
+    </script>
+</head>
+    <body>
+        <header>
+            <a href="index.html" class="logo"><img src="img/musicalNoBackground.png"/></a>
+            <!-- logo -->
+            <nav>
+                <li><a href="index.html" id="firstNav">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <form>
+                    <!-- search bar -->
+                    <div>
+                        <input type="text" placeholder="Search..." class="search">
+                    </div>
+                </form>
+                <br class="clearFloat"/>
+            </nav>
+            <br class="clearFloat"/>
+        </header>
+        <h1>Image Gallery</h1>
+        <section id="gallery">
+        <ul id="image_list">
+	        <li><a href="galleryimg/image1.png"  title="College Conservatory of Music at University of Cincinnati" id="first_link">
+	        	<img src="galleryimg/image1.png" width =90px height=60px alt=""></a></li>
+	        <li><a href="galleryimg/image2.png" title="Souers Recital Hall at Miami University">
+	        	<img src="galleryimg/image2.png" width =90px height=60px alt=""></a></li>
+	        <li><a href="galleryimg/image3.png" title="Oxford Community Arts Center">
+	        	<img src="galleryimg/image3.png" width =90px height=60px alt=""></a></li>
+	        <li><a href="galleryimg/image4.png" title="Miami University Department of Theatre">
+	        	<img src="galleryimg/image4.png" width =90px height=60px alt=""></a></li>
+	        <li><a href="galleryimg/image5.png" title="Matinee Musicale">
+	        	<img src="galleryimg/image5.png" width =90px height=60px alt=""></a></li>
+            <li><a href="galleryimg/image6.png" title="Presser Hall at Miami University">
+	        	<img src="galleryimg/image6.png" width =90px height=60px alt=""></a></li>
+            <li><a href="galleryimg/image7.png" title="Trombone Player">
+	        	<img src="galleryimg/image7.png" width =90px height=60px alt=""></a></li>
+	    </ul>
+            <h2 id="caption">Venues</h2>         
+	    <p><img src="galleryimg/image1.png" width =750px height=450px alt="" id="image"></p>
+        </section>
+        <br class="clearFLoat">
+        <footer>
+        <a name="contact"><h1>Contact</h1></a>
+        <div class="blurb"></div>
+        <form action="thanks.html" id="contactUs">
+            <fieldset>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="Full Name" id="fullName">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="text" name="Email" id="email">
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="submit"></label>
+                <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+	</footer>
+    </body>
+</html>
