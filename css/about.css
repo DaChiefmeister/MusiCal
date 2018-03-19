@@ -17,3 +17,9 @@ nav{
 /* webpage body*/
 main {margin:0px 150px 0px 150px}
 
+ul { display: none; }
+
+#image {max-width:50%;}
+
+.main{margin-left:0px;}
+
