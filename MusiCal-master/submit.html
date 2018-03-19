@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>MusiCal: Submit an Event</title>
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png">
+</head>
+<body>
+	<header>
+        <a href="index.html"><img src="img/musicalNoBackground.png"/></a> <!-- logo -->
+		<nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          <form>
+            <!-- search bar -->
+			<input type="text" placeholder="Search.." class="search">
+        </form>
+        </nav>
+</header>
+<section>
+    <form action="thanks.html">
+    <fieldset name="submit" id="submit">
+		<div class="label"><label for="name">
+			Name:
+		</label></div>
+			<input type="text" name="name" id="name"/>
+		<div class="label"><label for="eventname">
+			Event Name:
+		</label></div>
+			<input type="text" name="eventname" id="eventname"/>
+		<div class="label"><label for="location">
+			Location:
+		</label></div>
+			<input type="text" name="location" id="location"/>
+        <div class="label"><label for="time">
+            Time:
+        </label></div>
+            <input type="text" name="time" id="time">
+        <div class="label"><label for="desc">
+            Type up a brief description of your event.
+        </label></div>
+            <input type="text" name="desc" id="desc">
+        <input type="submit">
+	</fieldset>
+    </form>
+</section>
+    <footer>
+        <a name="contact"><h1>Contact</h1></a>
+        <div class="blurb"></div>
+        <form action="index.html">
+            <fieldset>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="Full Name" id="fullName">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="text" name="Email" id="email">
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <input type="text" name="Message" id="message">
+            </fieldset>
+            <fieldset>
+                <label for="submit"></label>
+                <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>

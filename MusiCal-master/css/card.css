@@ -1,0 +1,133 @@
+div.event{
+    width:18vw;
+    height:18vw;
+    background-color: #838383;
+    float:left;
+    margin:2vw 2vw 0 0;
+    color:#EFEFEF
+}
+div.event p{
+    font-size: 1vw;
+    margin: 1vw;
+}
+div.event a{
+    color:#0088E3;
+    font-size: 1vw;
+}
+div.largeEvent a{
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+div.largeEvent p{
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+div.event h3{
+    text-align: center;
+    color:#EFEFEF;
+    font-size:2.5vw;
+    margin:0;
+    padding-top:0;
+}
+div.event h5{
+    text-align: center;
+    color:#EFEFEF;
+    font-size:1.5vw;
+    margin:0;
+    padding-top:0;
+}
+div.toggler h3.title{
+    position:relative;
+    top:-1vw;
+}
+div.toggler h5.title{
+    padding-top:0;
+    font-size: 1.1vw; 
+    color:#EFEFEF;
+    margin: 0;
+    position:relative;
+    top:-.5vw;
+}
+div.event h3.performanceType{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0 1vw;
+    margin:0;
+    color:#FC4242;
+}
+div.event h5.performanceType{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5vw;
+    text-align: left;
+    padding: 0 .5vw;
+    margin:0;
+    color:#FC4242;
+}
+.largeEvent .expand h3{
+    padding-top:4vw;
+}
+.largeEvent .expand h3{
+    padding-top:4vw;
+}
+.event .expand h5{
+    padding-top:1vw;
+}
+div.largeEvent{
+    width:38vw;
+    height:38vw;
+}   
+div.gatesMiami{
+    background: url(../img/gatesMiami.png);
+    background-repeat: no-repeat;
+    background-size:100%; 
+}
+div.souersMiami{
+    background: url(../img/souersMiami.jpg);
+    background-repeat: no-repeat;
+    background-size:100%; 
+}
+div.hallMiami{
+    background: url(../img/hallMiami.png);
+    background-repeat: no-repeat;
+    background-size:100%; 
+}
+#more{
+    color: #0088E3;
+    margin-top: 2vw;
+    background-color: #FFFFFF;
+}
+div.toggler{
+    margin-top: 14vw;
+    height:4vw;
+    text-align: center;
+    cursor: pointer;
+    background-color: #D0D0D0;
+}
+.largeEvent .toggler{
+    height:8vw;
+    margin-top: 30vw;
+}
+.event .expand{
+    position:relative;
+    top:-13vw; 
+    height:13vw;
+}
+.largeEvent .expand{
+    position:relative;
+    top:-30vw; 
+    height:29vw;
+}
+.expand{
+    display: none;
+    background-color: #D0D0D0;
+}
+div#moreEvents{
+    text-align: center;
+    width:100%;
+    margin-top: 4vw;
+}
+div#moreEvents a{
+    font-size: 2vw;
+    color:#0088E3;
+}

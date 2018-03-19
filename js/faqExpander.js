@@ -18,4 +18,8 @@ window.onload = function(){
             for(i=0; i<h2Elements.length; i++){
                 h2Elements[i].onclick = toggle;
             }
+<<<<<<< HEAD
         }
+=======
+        }
+>>>>>>> origin/master
