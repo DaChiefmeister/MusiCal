@@ -208,9 +208,19 @@ div.blurb p{
     margin:2.5vw 0;
     padding:1vw;
 }
+
 footer form{
     width:35vw;
     display: table;
+}
+footer{
+    height: 110vh;
+}
+label.error{
+    text-align: center;
+    margin: -2vw 0 2vw 0;
+    width:35vw;
+    color:#FC4242;
 }
 footer fieldset{
     float:left;
@@ -240,6 +250,7 @@ footer  textarea{
 #message{
     height:16vw;
 }
+
 footer#copywrite{
     background-color: #606060;
     height:11%;

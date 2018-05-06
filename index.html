@@ -10,10 +10,22 @@
     <link rel="stylesheet" type="text/css" href="css/card.css" />
 	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|PT+Serif" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
     <script>
         $(function() {
             $('.toggler').click(function() {
-                $(this).find('.expand').slideToggle();
+                $(this).find('.expand').slideToggle(1000);
+            });
+        });
+        $(document).ready(function() {
+            $("#contactUs").validate({
+                rules: {
+                    fullName: {required: true, minlength: 2},
+                    email: {required: true, email: true},
+                    comment: {required:true, minlength: 15}
+                }
             });
         });
     </script>
@@ -108,15 +120,15 @@
         <form action="thanks.html" id="contactUs">
             <fieldset>
                 <label for="fullName">Full Name</label>
-                <input type="text" name="Full Name" id="fullName">
+                <input type="text" name="fullName" id="fullName" required>
             </fieldset>
             <fieldset>
                 <label for="email">Email</label>
-                <input type="text" name="Email" id="email">
+                <input type="text" name="email" id="email" required>
             </fieldset>
             <fieldset>
                 <label for="message">Message</label>
-                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
+                <textarea rows="12" cols="38" name="comment" form="contactUs" required></textarea>
             </fieldset>
             <fieldset>
                 <label for="submit"></label>
