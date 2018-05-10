@@ -6,6 +6,9 @@ div.event{
     margin:2vw 2vw 0 0;
     color:#EFEFEF
 }
+.hidden{
+    display: none;
+}
 div.event p{
     font-size: 1vw;
     margin: 1vw;
