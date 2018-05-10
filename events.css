@@ -1,0 +1,44 @@
+@media only screen and (min-device-width : 1024px) {
+    body{
+        margin:0;
+        padding: 0;
+    }
+    header img{
+        width:20vw;
+    }
+    nav li, nav input{
+        display: none;
+    }
+    section#events{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    section div.event{
+        float:none;
+        width:100%;
+        margin:0;
+    }
+    div.event p{
+        font-size: 1em;
+    }
+    .hidden{
+        display: none;
+    }
+    footer div.blurb{
+        margin-right: ;
+    }
+    footer form{
+        width:40vw;
+    }
+    footer{
+        height:60vh;
+    }
+    footer label{
+        font-size: 14px;
+        width:12vw;
+    }
+    footer textarea{
+        height: 20vh;
+    }
+}
