@@ -15,11 +15,11 @@ nav{
     padding-top: 1vw; 
 }
 /* webpage body*/
-main {margin:0px 150px 0px 150px}
+
 
 ul { display: none; }
 
-#image {max-width:50%;}
+#image {max-width:100%;}
 
 .main{margin-left:0px;}
 
