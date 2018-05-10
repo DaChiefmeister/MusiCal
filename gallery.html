@@ -37,36 +37,29 @@
         }
     </style>
     <script>
-        var $ = function (id) {
-            return document.getElementById(id);
-        }
-        window.onload = function () {
-            var imageLinks = $("image_list").getElementsByTagName("a");
-            // Process image links
-            for ( i = 0; i < imageLinks.length; i++ ) {
-                var linkNode = imageLinks[i];
-                // Attach event handler
-                linkNode.onclick = function (evt) {
-                    var link = this;          
-                    $("image").src = link.getAttribute("href");
-                    $("caption").firstChild.nodeValue = link.getAttribute("title");
-                    // Cancel the default action of the event
-                    if (!evt) {
-                        evt = window.event;
-                    }
-                    if(evt.preventDefault) {
-                        evt.preventDefault();
-                    }
-                    else {
-                        evt.returnValue = false;
-                    } 
-                } 
-                // Preload image
-                var image = new Image();
-                image.src = linkNode.getAttribute("href");
-            }
-            $("first_link").focus();
-        }
+        $(document).ready(function() {
+            // preload images
+            $("#image_list a").each(function() {
+                var swappedImage = new Image();
+                swappedImage.src = $(this).attr("href");
+            });
+            // set up event handlers for links    
+            $("#image_list a").click(function(evt) {
+                // swap image
+                var imageURL = $(this).attr("href");
+                $("#image").fadeOut("fast",function(){
+                    $(this).attr("src", imageURL).fadeIn();
+                });
+                //swap caption
+                var caption = $(this).attr("title");
+                $("#caption").text(caption);				
+                // cancel the default action of the link
+                evt.preventDefault();  // jQuery method that's cross-browser compatible
+            }); // end click	
+            // move focus to first thumbnail
+            $("li:first-child a:first-child").focus();
+        }); // end ready
+
     </script>
 </head>
     <body>
