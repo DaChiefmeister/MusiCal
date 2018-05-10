@@ -4,28 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>MusiCal: Home</title>
     <meta name="viewport" content="width=device-width">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script charset="utf-8" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/events.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/card.css" />
 	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|PT+Serif" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
     <script>
         $(function() {
             $('.toggler').click(function() {
-                $(this).find('.expand').slideToggle(1000);
-            });
-        });
-        $(document).ready(function() {
-            $("#contactUs").validate({
-                rules: {
-                    fullName: {required: true, minlength: 2},
-                    email: {required: true, email: true},
-                    comment: {required:true, minlength: 15}
-                }
+                $(this).find('.expand').slideToggle();
             });
         });
     </script>
@@ -34,7 +24,6 @@
 	<header>
         <div class="parallax">
             <a href="index.html" class="logo"><img src="img/musicalNoBackground.png" /></a> <!-- logo -->
-            <a href="login.html" id="login">LOGIN</a>
             <nav>
                 <li><a href="index.html" id="firstNav">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -42,7 +31,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <form action="index.html">
                     <!-- search bar -->
-			         <input type="text" placeholder="Search..."  class="search">
+			         <input type="text" placeholder="Search..."  id="search" class="search">
                 </form>
                 <br class="clearFloat">
             </nav>
@@ -52,61 +41,7 @@
             </div>
         </div>    
 	</header>
-    <section>
-        <div class="largeEvent event gatesMiami">
-            <div class="toggler"><h3 class="performanceType">Opera</h3><h3 class="title">Ghost Stories</h3>
-                <div class="expand">
-                    <h3>MU Opera Ghost Stories</h3>
-                    <p>Two short operas in one night. Join Miami Opera for a performance of Holst's <span>Savitri</span> and Menotti's <span>The Medium</span></p>
-                    <p>Thursday-Saturday, March 1-3</p>
-                    <p>at 7:30 pm</p>
-                    <a href="https://ev13.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=MS&linkID=miamioh&shopperContext=&caller=&appCode=">Tickets</a>
-                    <a href="https://www.google.com/maps/place/Miami+University+Department+of+Theatre/@39.5050231,-84.7340516,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xe9e2f711e89a489c!8m2!3d39.505019!4d-84.7318629" class="gatesMiami"> Directions</a>
-                </div>
-            </div>
-        </div>
-        <div class="event souersMiami">
-            <div class="toggler"><h5 class="performanceType">Voice</h5><h5 class="title">Tiffany Turkovich</h5>
-                <div class="expand">
-                    <h5>Recital: Tiffany Turkovich</h5>
-                    <p>Saturday, February 24</p>
-                    <p>at 7:30 pm</p>
-                    <a href="https://www.google.com/maps/place/420+S+Patterson+Ave,+Oxford,+OH+45056/@39.5042724,-84.7346433,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xeff96b0d57c55b81!8m2!3d39.5042683!4d-84.7324546" class="souersMiami"> Directions</a>
-                </div>
-            </div>
-        </div>
-        <div class="event hallMiami">
-            <div class="toggler"><h5 class="performanceType">Choir</h5><h5 class="title">Schubert Mass in G</h5>
-                <div class="expand">
-                    <h5>Chamber Singers and Collegiate Chorale</h5>
-                    <p>Sunday, March 11</p>
-                    <p>at 7:30 pm</p>
-                    <a href="https://www.google.com/maps/place/Hall+Auditorium,+Oxford,+OH+45056/@39.5089513,-84.7406709,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0c4439050b:0x54673ca5595acc90!8m2!3d39.5089532!4d-84.7385071" class="hallMiami"> Directions</a>
-                </div>
-            </div>
-        </div>
-        <div class="event souersMiami">
-            <div class="toggler"><h5 class="performanceType">Voice</h5><h5 class="title">Voices from the Balkans</h5>
-                <div class="expand">
-                    <h5> Art songs from Bulgaria</h5>
-                    <p>Monday March 12</p>
-                    <p>at 7:30 pm</p>
-                    <a href="https://www.google.com/maps/place/420+S+Patterson+Ave,+Oxford,+OH+45056/@39.5042724,-84.7346433,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xeff96b0d57c55b81!8m2!3d39.5042683!4d-84.7324546" class="souersMiami"> Directions</a>
-                </div>
-            </div>
-        </div>
-        <div class="event souersMiami">
-            <div class="toggler"><h5 class="performanceType">Piano</h5><h5 class="title">Svetlana Belsky</h5>
-                <div class="expand">
-                    <h5>Guest Recital: Svetlana Belsky</h5>
-                    <p>Thursday, March 15</p>
-                    <p>at 7:30 pm</p>
-                    <a href="https://www.google.com/maps/place/420+S+Patterson+Ave,+Oxford,+OH+45056/@39.5042724,-84.7346433,17z/data=!3m1!4b1!4m5!3m4!1s0x88403d0833b25be3:0xeff96b0d57c55b81!8m2!3d39.5042683!4d-84.7324546" class="souersMiami"> Directions</a>
-                </div>
-            </div>
-        </div>
-        <br class="clearFLoat">
-        <div id="moreEvents"><a href="events.html">More Events</a></div>
+    <section id="searchResults">
     </section>
     <br class="clearFloat">
     <div class="parallax" id="number2"></div>
@@ -120,15 +55,15 @@
         <form action="thanks.html" id="contactUs">
             <fieldset>
                 <label for="fullName">Full Name</label>
-                <input type="text" name="fullName" id="fullName" required>
+                <input type="text" name="Full Name" id="fullName">
             </fieldset>
             <fieldset>
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" required>
+                <input type="text" name="Email" id="email">
             </fieldset>
             <fieldset>
                 <label for="message">Message</label>
-                <textarea rows="12" cols="38" name="comment" form="contactUs" required></textarea>
+                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
             </fieldset>
             <fieldset>
                 <label for="submit"></label>
