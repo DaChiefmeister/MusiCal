@@ -1,0 +1,153 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>MusiCal: Bios</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|PT+Serif" rel="stylesheet">
+    <!-- CSS and jQuery needed to make mobile work correctly -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        #back {
+            width: 77%;
+            margin: auto;
+            position: relative;
+            left: 2.5%
+        }
+        #bios {
+            margin: auto;
+        }
+    </style>
+</head>
+    <body>
+    <div data-role="page" id="bio">
+	<!--<header>
+        <div id="header">
+            <a href="index.html" class="logo"><img src="img/musicalNoBackground.png" /></a>
+            <a href="login.html" id="login">LOGIN</a>
+            <nav>
+                <li><a href="index.html" id="firstNav">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <form action="index.html">
+			         <input type="text" placeholder="Search..."  class="search">
+                </form>
+                <br class="clearFloat">
+            </nav>
+        </div>    
+	</header>-->
+       <div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+                    <li><a href="events.html" data-icon="star">Events</a></li>
+					<li><a href="faq.html" data-icon="star" >FAQ</a></li>
+	            	<li><a href="submit.html" data-icon="star" >Submit an Event</a></li>
+				</ul>
+	    	</div>
+        <section data-role="content">
+			<div class="content-primary" id="bios">
+				<ul data-role="listview" data-split-icon="gear" data-inset="true" data-filter="true">
+                	<li data-role="list-divider">Project Leader</li>
+                    <li>
+                    	<a href="#">
+                    		<img src="img/jenny.png" alt="Jenny">
+                    		<h3>Jenny McGregor</h3>
+                    	</a>
+                    	<a href="#jenny" data-rel="dialog" data-transition="pop" title="Contact Us"></a>
+                	</li>
+        
+        
+                    <li data-role="list-divider">Other Project Members</li>
+					<li>
+                    	<a href="#">
+                    		<img src="img/nate.png" alt="Nate">
+                    		<h3>Nate Wilkins</h3>
+                    	</a>
+                    	<a href="#nate" data-rel="dialog" data-transition="pop" title="Contact Us"></a>
+                	</li>
+                	<li>
+                    	<a href="#">
+                    		<img src="img/denver.png" alt="Denver">
+                    		<h3>Denver Humphries</h3>
+                    	</a>
+                    	<a href="#denver" data-rel="dialog" data-transition="pop" title="Contact Us"></a>
+                	</li>
+            	</ul>
+			</div>
+    	</section>
+        
+    <!--<footer id="footer">
+        <a name="contact"><h1><span>Contact</span></h1></a>
+        <div class="blurb">
+            <p>
+                If you wish to contact us about adding you school or organization to the website or anyother questions, please use this form.
+            </p>
+        </div>
+        <form action="thanks.html" id="contactUs">
+            <fieldset>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="Full Name" id="fullName">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="text" name="Email" id="email">
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea rows="12" cols="38" name="comment" form="contactUs"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="submit"></label>
+                <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+    </footer>-->
+        <a href="about.html" data-role="button" data-icon="back" data-theme="b" id="back">Back to About</a>
+    </div>
+        
+        <div data-role="page" id="jenny">
+    	<header data-role="header">
+        	<h1>Project Leader</h1>
+    	</header>
+    	<section data-role="content"> 
+		 		<h3>Jenny McGregor</h3>
+            	<img src="img/jenny.png" alt="Jenny">
+            	<h4>Jenny McGregor</h4>
+            	<p> Jenny is a Senior at Miami University studying Marketing and Interactive Media. Professionally, her passions include digital marketing, branding, and design. Outside of school and work, she loves cuddling with her cat, Tofu, and judging bad reality TV shows with her roommate. </p>
+        </section>
+        </div>
+            
+        <div data-role="page" id="nate">
+    	<header data-role="header">
+        	<h1>Other Project Members</h1>
+    	</header>
+    	<section data-role="content"> 
+		 		<h3>Nate Wilkens</h3>
+            	<img src="img/nate.png" alt="Nate">
+            	<h4>Nate Wilkens</h4>
+            	<p>As a Vocal Performance major, I see the need for singers and other musicians to advertise themselves in the digital age with tools such as websites. I aim to help other singers create and maintain modern, responsive and compelling websites that help advertise themselves and share their work with a broader audience.</p>
+        </section>  
+        </div>
+            
+        <div data-role="page" id="denver">
+    	<header data-role="header">
+        	<h1>Other Project Members</h1>
+    	</header>
+    	<section data-role="content"> 
+		 		<h3>Denver Humphries</h3>
+            	<img src="img/denver.png" alt="Denver">
+            	<h4>Denver Humphries</h4>
+            	<p>Denver is a Freshman at Miami University, majoring in Geology and minoring in Studio Art. He begrudgingly tolerates doing digital web design, but prefers working with physical materials. His passions include writing, palaeontology, and video editing.</p>
+        </section>
+        </div>
+        
+    </body>
+</html>
