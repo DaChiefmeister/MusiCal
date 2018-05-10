@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/about.css"/>
 	<link rel="shortcut icon" type="image/png" href="img/tabIcon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|PT+Serif" rel="stylesheet">
+    <!-- Mobile-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     
     <script>
         var $ = function (id) 
@@ -37,15 +42,18 @@
     </script>
 </head>
 <body>
+    <!--
 	<header>
-        <a href="index.html" class="logo"><img src="img/musicalNoBackground.png"/></a> <!-- logo -->
+        <a href="index.html" class="logo"><img src="img/musicalNoBackground.png"/></a> 
 		<nav>
             <li><a href="index.html" id="firstNav">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Events</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <form>
-            <!-- search bar -->
+      
 		      <div>
 			     <input type="text" placeholder="Search..." class="search">
 		      </div>
@@ -54,8 +62,24 @@
         </nav>
         <br class="clearFloat"/>
 	</header>
-    <main>
-        <section class="main">
+    -->
+    <div data-role="page" id="carousel">
+    	<header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+				</ul>
+	    	</div>
+    	</header>
+
+        <section class="main" data-role="content" id="carousel">
         <ul id="image_list">
             <li><a href="img/cello%20player.jpg" title="Cello Player"></a></li>
             <li><a href="img/violinists.jpg" title="Violinists"></a> </li>
@@ -64,22 +88,59 @@
             <li><a href="img/musicians.jpg" title="Saxophone Player"></a> </li>
         
         </ul>
-        
+    
         <h2 id="caption">Cello Player</h2>
         <p>
             <img src="img/cello%20player.jpg" alt="" id="image">
         </p>
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
         </section>
-        <br/>
-        <br/>
-        <p class="center"> For answers to some frequently asked questions, see <a href="faq.html"> here.</a></p>
-	<p class="center"> For larger images of the venues listed below, see <a href="gallery.html"> here. </a></p>
-        <h1>About MusiCal</h1>
+    </div>
+       
+        
+    <div data-role="page" id="home">
+    	<header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+				</ul>
+	    	</div>
+    	</header>
+        <section data-role="content">
         <div><p>MusiCal gathers information about upcoming musical performances in the Greater Cincinnati area and aggregates these events into an easy to navigate platform. We created MusiCal so that thes musical arts can be discovered and shared easily with friends and the community.</p>
         
-        <p>Events on MusiCal are assembled from event venues such as:</p>
+        <p class="center"> For answers to some frequently asked questions, see <a href="faq.html"> here.</a></p>
+	   <p class="center"> For larger images of the venues listed below, see <a href="gallery.html"> here. </a></p>
+            
+        <p class="center">MusiCal also allows user-submitted events! To submit an event, click <a href="contact.html">here</a></p>
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
+        </div>
+        </section>
         </div>
         
+        <div data-role="page" id="ccm">
+            <header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+				</ul>
+	    	</div>
+    	</header>
+        <section data-role="content">
         <h4>College Conservatory of Music at University of Cincinnati</h4> 
         <img src="img/ccm.png" alt="violin player at ccm" class="venuepic">
             
@@ -87,36 +148,105 @@
 
         <p>The synergy created by housing CCM within a comprehensive public university gives the college its unique character and defines its objective: to educate and inspire the whole artist and scholar for positions on the world's stage.CCM's educational roots date back to 1867, and a solid, visionary instruction has been at its core since that time.</p>
         <p><a href="http://ccm.uc.edu/about/villagenews/save-the-date.html">CCM Calendar</a></p>
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
+        </div>
+        </section>
         </div>
         
-        <br class="clearFloat">
-
         
+        <div data-role="page" id="souers">
+            <header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+				</ul>
+	    	</div>
+    	</header>
+        <section data-role="content">
         <h4>Souers Recital Hall at Miami University</h4>
         <img src="img/piano%20girl%20souers.jpg" class="venuepic" alt="girl at piano">
         <div class="venueinfo"><p>Sidney W. Souers Recital Hall is the primary venue for Miami University's series of recitals, chamber music, and master classes. Nearly 100 public events are presented in Souers each year. The hall seats 150 and currently houses two Steinway grand pianos, a model D and a model B.</p>
         <a href="http://miamioh.edu/cca/academics/departments/music/performances/performance-calendar/index.html">MU Department of Music Calendar</a>
         </div>
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
+        </section>
+        </div>
         
-        <br class="clearFloat">
-
-        
+        <div data-role="page" id="ocac">
+            <header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+				</ul>
+	    	</div>
+    	</header>
+        <section data-role="content">
         <h4>Oxford Community Arts Center</h4>
         <img src="img/ocac.jpg" class="venuepic" alt="band at oxford community arts center">
         <p>Oxford Community Arts group was formed in 1998. Community need for an arts facility had long been identified, and   Miami University was about to dispose of the large, historic building that was once Oxford College for Women. A group of 12 formed a steering committee to save the building as a center for the arts in our area. The group was incorporated in 2001.</p>
 
         <p>The Mission of the Oxford Community Arts Center (OCAC) is to ENRICH lives and build community by providing, celebrating and promoting a diverse array of cultural and arts programming, performances and exhibits; carefully PRESERVE the historic Oxford College building and campus as a welcoming  environment offering classroom, studio, rehearsal, concert, theatre and meeting spaces; and ENSURE the Center’s ability to serve future generations as a catalyst, connector and magnet for emerging and established artists, performers, students, visitors and arts organizations.</p>
         <a href="http://www.oxarts.org/events/">OCAC Events Calendar</a>
-        
-        <br class="clearFloat">
-
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
+        </section>
+        </div>
+    
+        <div data-role="page" id="nats">
+            <header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+				</ul>
+	    	</div>
+    	</header>
+        <section data-role="content">
         <h4>National Association of Teachers of Singing</h4>
         <img src="img/nats.jpeg" class="venuepic" alt="national association of teachers of singing logo">
         <p>Founded in 1944, National Association of Teachers of Singing, Inc. (NATS) is the largest professional association of teachers of singing in the world with nearly 7,000 members in the United States, Canada, and nearly 30 other countries. Internationally, NATS is represented in Argentina, Australia, Austria, Belgium, Bolivia, Brazil, China, Colombia, Denmark, France, Germany, Greece, Hungary, Indonesia, Ireland, Italy, Japan, Malaysia, Mexico, Netherlands, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, Taiwan, and the United Kingdom, with the number of countries growing every year.</p>
         <a href="https://www.nats.org/events.html">NATS Events Calendar</a>
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
+        </section>
+        </div>
        
-        <br class="clearFloat">
-
+    
+        <div data-role="page" id="matineemusicale">
+            <header data-role="header">
+        	<h1>About Musical</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#carousel" data-icon="home" class="ui-btn-active">Images</a></li>
+                    <li><a href="#home" data-icon="star">About</a></li>
+					<li><a href="#ccm" data-icon="star" >CCM</a></li>
+	            	<li><a href="#souers" data-icon="star" >Soeurs</a></li>
+                    <li><a href="#ocac" data-icon="star" >OCAC</a></li>
+                    <li><a href="#nats" data-icon="star" >NATS</a></li>
+                    <li><a href="#matineemusicale" data-icon="star" >Matinee Musicale</a></li>
+                    
+				</ul>
+	    	</div>
+    	</header>
+        <section data-role="content">
         <h4>Matinee Musicale</h4>
         <img src="img/matineemusicale.jpg" class="venuepic" alt="girl singing at matinee musicale">
         <p>The Matinée Musicale Club began in 1911 when a group of Cincinnati women, all performing musicians, joined forces to present five public concerts that year and in 1912. In 1913 the club launched the Matinée Musicale Recital Series, engaging professional musicians from around the world.</p>
@@ -125,10 +255,12 @@
 
         <p>Matinée Musicale has played an important role in Cincinnati’s musical history. Thanks to the club’s efforts, the city, widely acknowledged as fertile ground for the performing arts, especially classical music, saw early performances by numerous instrumentalists and vocalists who became classical music stars.</p>
         <a href="http://matineemusicalecincinnati.org/index.php/concerts/">Matinee Musicale Concerts</a>
-
-        <br class="clearFloat">
-        <p class="center">MusiCal also allows user-submitted events! To submit an event, click <a href="contact.html">here</a></p>
-    </main>
+        
+        <a href="index.html" data-role="button" data-icon="back" data-theme="b">Home</a>
+        </section>
+        </div>
+        
+    <!--
 	<footer>
         <a name="contact"><h1>Contact</h1></a>
         <div class="blurb"></div>
