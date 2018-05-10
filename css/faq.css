@@ -1,25 +1,25 @@
 /*fonts*/
 
+.question {font-family:'PT Serif', serif;       
+}
 
-
-body{
-    font-family: 'Open Sans', sans-serif;
+p {font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 12px;
 }
 
 /*image*/
-main img#sideImage {
-    float: right;
-    max-width:50%;
-    max-height:auto;
-    margin:50px;
-}
+#sideImage {float: right;
+            max-width:50%;
+            max-height:auto;
+            margin-top:50px;
+    }
 /*main content*/
 
-main {
-    margin:0px 80px;
+main {margin:0px 80px;
 }
-h2 {
-    font-size: 1.5em;
+
+#accordion {float:left;
+            width: 45%;
+            margin-bottom: 50px;
 }
