@@ -12,6 +12,11 @@
     <link rel="stylesheet" type="text/css" href="events.css" />
     <link rel="shortcut icon" type="image/png" href="../img/tabIcon.png">
     <script>
+        $("section > div").on('click', function(){
+            $('div:hidden').slideToggle();
+        });
+    </script>
+    <script>
         $(function() {
             $('.toggler').click(function() {
                 $(this).find('.expand').slideToggle();
